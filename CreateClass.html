@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateClass</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- 头部导航 -->
+    <header>
+        <h1 style="margin: 0;"><img src="./Logo.png" alt="Logo" style="width:405px;height: 75px;"/></h1>
+        <ul class="header-menu">
+            <li><a href="">首页</a></li>
+            <li><a href="">教学管理</a></li>
+            <li><a href="">学习</a></li>
+            <li><a href="">资源超市</a></li>
+            <li><a href="">教育应用</a></li>
+            <li><a href="">新闻</a></li>
+            <li><a href="">名师名校</a></li>
+        </ul>
+        <!-- 这个是那个红色的标签 -->
+        <div style="margin: auto 15px;">
+            <div class="tag-left">
+                <p style="color: white;">新功能</p>
+            </div>
+            <div class="tag-right"></div>
+        </div>
+        <!-- 搜索图标和头像 -->
+        <a href="" style="margin:0 15px;">
+            <i class="glyphicon glyphicon-search" style="color: deepskyblue;"></i>
+        </a>
+        <a href="" style="float: right;margin: auto 20px;">
+            <img src="./cow.jpg" class="img-circle" width="50px">
+        </a>
+    </header>
+    <hr class="hor-hr">
+    <!-- 侧边导航 -->
+    <div id="side-bar">
+        <div class="navbar-header">
+            <a href=""><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <span style="font-size: large;color: rgb(194, 194, 194);">个人中心</span>
+            <a href=""><i class="glyphicon glyphicon-th"></i></a>
+        </div>
+        <div style="width: 100%;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        &nbsp;&nbsp;其他内容
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <i class="glyphicon glyphicon-education"></i>
+                        &nbsp;&nbsp;我的班级
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="glyphicon glyphicon-tags"></i>
+                        &nbsp;&nbsp;其他内容
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 右侧垂直分割线 -->
+    <div style="width: 1px;height: 90vh;top:0;background-color: rgb(214, 214, 214);"></div>
+    <!-- 主要内容区 -->
+    <div id="content">
+        <div class="content-header">
+            <h5 style="display: inline-block;">我的班级</h5>
+            <button class="my-btn" style="float: right;">返回上一级</button>
+        </div>
+        <hr class="hor-hr">
+        <div class="content-main">
+            <p>尊敬的<span style="color: deepskyblue;">老师(连老师)</span>请填写信息:</p>
+            <form action="submit">
+                <label for="">学校</label>
+                <input type="text" placeholder="请输入学校">
+                <br>
+                <label for="">学段</label>
+                <select name="学段" id="" required>
+                    <option value="1">小学</option>
+                    <option value="2">初中</option>
+                    <option value="3">高中</option>
+                    <option value="4">大学</option>
+                </select>
+                <br>
+                <label for="">年级</label>
+                <select name="年级" id="" required>
+                    <option value="1">一年级</option>
+                    <option value="2">二年级</option>
+                    <option value="3">三年级</option>
+                </select>
+                <br>
+                <label for="">班级名</label>
+                <input type="text" placeholder="请输入班级名称，限20个字符，不支持输入...和%" required>
+                <br>
+                <label for="">类型</label>
+                <input type="radio" name="classType" id="political">&nbsp;&nbsp;行政班
+                <input type="radio" name="classType" id="teaching">&nbsp;&nbsp;教学班
+                <br>
+                <label for="">退出权限设置</label>
+                <input type="radio" name="permissions" id="permit">&nbsp;&nbsp;允许退出
+                <input type="radio" name="permissions" id="audit">&nbsp;&nbsp;通过班级管理员审核后退出
+                <input type="radio" name="permissions" id="forbid">&nbsp;&nbsp;禁止退出
+                <br>
+                <label for=""></label>
+                <button class="my-btn">保存</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
